@@ -6,5 +6,11 @@ export default defineConfig({
     plugins: [plugin()],
     server: {
         port: 63399,
-    }
+    },
+    css: {
+        preprocessorOptions: {
+            scss: {
+            },
+        },
+    },
 })

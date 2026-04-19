@@ -1,0 +1,33 @@
+$navBackground: #004F00;
+$navHeight: 50px;
+
+.navBar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: start;
+}
+
+.navExtra {
+    height: $navHeight;
+    fill: $navBackground;
+}
+
+.navContainer {
+    background: $navBackground;
+}
+
+.navButton {
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    height: $navHeight;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+
+        &:active {
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
