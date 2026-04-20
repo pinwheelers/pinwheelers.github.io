@@ -31,7 +31,7 @@ function App() {
                     path: "about",
                     children: [
                         { index: true, Component: AboutPage },
-                        { path: "univers", Component: AboutUniversePage },
+                        { path: "universe", Component: AboutUniversePage },
                     ]
                 },
             ]
