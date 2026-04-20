@@ -1,19 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.scss'
-import NavBar from './Navbar'
-
+import type { JSX } from 'react';
+import './App.scss';
+import NavBar from './Components/Navbar';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router';
+import HomePage from './Pages/HomePage';
+import ListenPage from './Pages/ListenPage';
+import MeetCrewPage from './Pages/MeetCrewPage';
+import MeetCastPage from './Pages/MeetCastPage';
+import AboutPage from './Pages/AboutPage';
+import AboutUniversePage from './Pages/AboutUniversePage';
+    
 function App() {
-    const [count, setCount] = useState(0)
 
-    return <>
-        <NavBar />
-        <div>
-            Hi :3
-        </div>
-    </>
+    const router = createBrowserRouter([
+        {
+            element: <AppGrid />,
+            children: [
+                { index: true, Component: HomePage },
+                {
+                    path: "listen",
+                    Component: ListenPage,
+                },
+                {
+                    path: "meet",
+                    children: [
+                        { path: "crew", Component: MeetCrewPage },
+                        { path: "cast", Component: MeetCastPage },
+                    ]
+                },
+                {
+                    path: "about",
+                    children: [
+                        { index: true, Component: AboutPage },
+                        { path: "univers", Component: AboutUniversePage },
+                    ]
+                },
+            ]
+        }]);
+
+    return <RouterProvider router={router} />;
 }
 
-export default App
+function AppGrid(): JSX.Element {
+    return <div className="appMain">
+        <NavBar />
+        <Outlet />
+    </div>;
+}
+
+export default App;

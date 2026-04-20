@@ -15,6 +15,7 @@ $navHeight: 50px;
 
 .navContainer {
     background: $navBackground;
+    display: flex;
 }
 
 .navButton {
@@ -22,6 +23,14 @@ $navHeight: 50px;
     color: white;
     border: none;
     height: $navHeight;
+    padding: 0 8px;
+    display: flex;
+    text-decoration: none;
+
+    > span {
+        margin: auto;
+        flex: 1;
+    }
 
     &:hover {
         background: rgba(255, 255, 255, 0.1);
