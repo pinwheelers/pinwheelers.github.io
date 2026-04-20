@@ -41,7 +41,6 @@ export default function NavBar(): JSX.Element {
                 <NavButton to="/about">About the project</NavButton>
                 <NavButton to="/about/universe">About the universe</NavButton>
             </Dropdown>
-            {/* About the universe / About the project */}
         </div>
         <svg className="navExtra" id="navExtra" viewBox="0 0 80 100">
             <polygon points="0,0 80,0 0,100 " />
