@@ -1,0 +1,19 @@
+$footerBackground: #868a86;
+
+.footerBar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.logoFormat {
+     width: 250px;
+}
+
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}

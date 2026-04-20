@@ -8,7 +8,8 @@ import MeetCrewPage from './Pages/MeetCrewPage';
 import MeetCastPage from './Pages/MeetCastPage';
 import AboutPage from './Pages/AboutPage';
 import AboutUniversePage from './Pages/AboutUniversePage';
-    
+import Footer from './Components/Footer';
+
 function App() {
 
     const router = createBrowserRouter([
@@ -43,7 +44,8 @@ function App() {
 function AppGrid(): JSX.Element {
     return <div className="appMain">
         <NavBar />
-        <Outlet />
+        <div className="appContent">  <Outlet /> </div>
+        <Footer />
     </div>;
 }
 
