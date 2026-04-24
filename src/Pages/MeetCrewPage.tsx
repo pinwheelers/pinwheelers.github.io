@@ -1,6 +1,22 @@
 import type { JSX } from "react";
 import "./MeetCrewPage.scss";
+import Profile from "../Components/Profile"
+import Tomallin from "../assets/Tomallin.png";
+import Juen from "../assets/Juen.png"
+import Keez from "../assets/Keez.png"
+import Alyx from "../assets/Alyx.png"
+import Duunba from "../assets/Duunba.png"
+import Sam from "../assets/Sam.png"
 
 export default function MeetCrewPage(): JSX.Element {
-    return <>Meet the crew</>;
+    return <div className = "crewContainer"> 
+    <Profile image={Keez} name={"Keez"}> The captain of the Nautilus, a Xel'Capian who's pursued making the universe a better place his entire life and has come to the conclusion that it's not working for him and he needs to fend for himself. His last attempted act of nobility was signing up for a deep space voyage seeking to survey and explore the Triangulum Galaxy and when the act of exploring was suddenly deemed illegal Keez took it upon himself to hold onto the ship he was granted and the crew he'd hired to make money in a way he was uniquely positioned to. Collecting artifacts from Pinwheel and selling them to the highest bidder. </Profile>
+    <Profile image={Sam} name={"Sam"}> The pilot. She's been flying craft since she was old enough to see over a dashboard. Born literally into a life of crime she spent her early life flying as a getaway driver for her thief parents. After a job went particularly bad Sam was abandoned by her parents with the joystick of their getaway craft lodged where her eye should have been. She spent the next 6 years in an Andromedan prison with her fellow inmates being the closest thing she'd have to a family until her early release by one Captain Keez of the Nautilus, she'd spend the next 12 years as Keez's pilot, continuing long after the outlawing of Pinwheeling. </Profile>
+    <Profile image={Tomallin} name={"Tomallin"}> A fellow soldier born to two powerful warlords and trained from youth. He was a disciplined, well trained warrior. When war came to Andromeda his parents were among the first to perish in the conflict. Tomallin took a position in the vanguard in the conflict and in a key pivotal battle he met Keez, who with the help of a small Xel'Capian squad managed to turn the tide of a lost battle on Crestfall. In a happenstance meeting long after the war Tomallin joined Keez's crew as a promise for better pay and more importantly, respect under the command of his new captain. </Profile>
+    <Profile image={Juen} name={"Juen"}> Born on a Rep'Tza homeworld, Juen was a human given just about every possible setback in life. With no money to his name, a horrid colony education and persecution under the newly established Andromedan hegemony; Juen is the weed that refused to die. He fought, both physically and mentally, for a seat at his local science academy and once he earned it he was the prime candidate for the first series of expeditions into the Pinwheel galaxy. When it became illegal to continue his work he was one of the first to suggest that... Just because someone else told you that you shouldn't do something, doesn't mean you have to listen. </Profile>
+    <Profile image={Alyx} name={"Alyx"}> Manufactured in Triangulum, Alyx spent her first 28 years with her entire life determined for her. A clone made to do difficult labor on distant worlds until her body eventually failed on her. She doesn't remember when, exactly, but one day she realized she wasn't quite happy with that. She yearned for something more, and that desire brought her nothing but suffering, those that purchased an autonomous clone didn't take too kindly to it suddenly rejecting labor. Her suffering eventually came to an abrupt end when a routine transfer to Andromeda ended up being interrupted and the hefty bounty on her previous owners was collected. She's not sure if her new life of crime is what she wants. Though she appreciates the opportunity to choose, and for now that's good enough. </Profile>
+    <Profile image={Duunba} name={"Duunba"}> bottom text </Profile>
+    
+    </div>
+
 }
