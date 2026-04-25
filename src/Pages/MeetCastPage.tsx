@@ -10,12 +10,8 @@ import Sam from "../assets/Sam.png"
 
 export default function MeetCastPage(): JSX.Element {
     return <div className = "castContainer"> 
-    <Profile image={Tomallin} name={"Gen"}> bottom text </Profile>
-    <Profile image={Juen} name={"Ander"}> bottom text <a href="SoundCloud">https://on.soundcloud.com/aZ3vGIJCrsaUF594df</a></Profile>
-    <Profile image={Keez} name={"Keez"}> bottom text </Profile>
-    <Profile image={Alyx} name={"Alyx"}> bottom text </Profile>
-    <Profile image={Duunba} name={"Duunba"}> bottom text </Profile>
-    <Profile image={Sam} name={"Sam"}> bottom text </Profile>
+    <h1>Page Under Construction! Please visit Later</h1>
+    <img src={Duunba} alt={`A picture of Duunba`} className="profileImageFormat" />
     </div>
 
 }
