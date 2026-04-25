@@ -8,12 +8,8 @@ export default function Footer(): JSX.Element {
         <div className="footerContainer">
             <img src={logo} alt="Pinwheeler Logo" className="logoFormat" />
             <div>
-                <p> Pinwheeler@gmail.com </p>
-                <p> ###-###-#### </p>
-                <p> copyright © {year} </p>
-                {/* email */}
-                {/* Phone number */}
-                {/* "copyright" */}
+                <p> kenn.erason@gmail.com </p>
+                <p> Copyright © {year} </p>
             </div>
         </div>
     </div>
