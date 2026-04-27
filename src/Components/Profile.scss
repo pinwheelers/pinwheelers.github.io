@@ -2,6 +2,11 @@
     flex: 1;
 }
 
+img {
+    flex: 0;
+    object-fit: contain;
+}
+
 .profileContainer {
     display: flex;
     text-align: left;
