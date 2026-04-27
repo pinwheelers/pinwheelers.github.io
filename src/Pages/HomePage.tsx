@@ -3,7 +3,6 @@ import "./HomePage.scss";
 
 export default function HomePage(): JSX.Element {
     return <>
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=cVw7j_5V9Jk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cVw7j_5V9Jk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
     </>;
-
 }
